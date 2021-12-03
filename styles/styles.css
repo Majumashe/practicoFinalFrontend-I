@@ -1,0 +1,326 @@
+@font-face {
+    font-family: "Be_Vietnam";
+    src: url(/assets/be-vietnam/BeVietnam-Regular.ttf);
+    font-weight: 400;
+  }
+@font-face {
+    font-family: "Be_Vietnam";
+    src: url(/assets/be-vietnam/BeVietnam-Medium.ttf);
+    font-weight: 500;
+  }
+@font-face {
+    font-family: "Be_Vietnam";
+    src: url(/assets/be-vietnam/BeVietnam-Bold.ttf);
+    font-weight: 700;
+  }
+*{
+    margin: 0;
+    padding:0;
+    font-family: "Be_Vietnam";
+}
+/* boton hamburguesa version mobile */
+#hamburguesa{
+    display: none;
+    background-image: url(/img/icon-hamburger.svg);
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+    border: none;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    background-color: #FFFFFF;
+}
+/* boton get started */
+.button-nav-bar{ 
+    background-color:#F3603B;
+    padding: 12.5px 30px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 19px;
+    text-align: left;
+    border-radius: 50px;
+    color: #FFFFFF;
+    text-decoration: none;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+}
+.button-nav-bar:hover{
+    background-color:#f37758;
+    box-shadow: 0px 4px 7px #f37758;
+}
+.button-nav-bar.last{ 
+    background-color:#FFFFFF;
+    padding: 12.5px 30px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 19px;
+    text-align: left;
+    border-radius: 50px;
+    color: #F3603B;
+    text-decoration: none;
+    box-shadow: none;
+}
+.button-nav-bar.last:hover{
+    background-color:#fce3dd;
+    box-shadow: 0px 4px 7px #f37758;
+}
+.cuerpo{
+    background: #FFFFFF;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(/img/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-position-x: 720px;
+    background-position-y: -141px;
+}
+.cuerpo .encabezado{
+    display: flex;
+    padding: 65px 100px;
+    flex-direction: row;
+    justify-content:space-between; 
+    align-items: center;
+    background-color: transparent;
+}
+/* Logotipo manage */
+.cuerpo .encabezado .logotipo a{
+    display: flex;
+    align-items: center;
+}
+.cuerpo .encabezado .menu .lista{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.cuerpo .encabezado .menu .lista .nav-bar-opciones{
+    padding: 0px 25px;
+    list-style-type: none;
+}
+/* Texto dentro de las anclas  */
+.cuerpo .encabezado .menu .lista .nav-bar-opciones a{
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 23px;
+    color:#242E52;
+    
+}
+.cuerpo .information{
+    display: flex;
+    padding: 65px 100px;
+    justify-content: space-around;
+}
+.cuerpo .information .brand{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1{
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 66px;
+    color: #232C50;
+    margin-bottom: 28px;
+}
+.cuerpo .information .brand p{
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #000000;
+    max-width: 360px;
+    margin-bottom: 28px;
+}
+.cuerpo .information .graficos-inicio{
+    background: transparent;
+}
+/* seccion informativa diferencia */
+.cuerpo .information .diferencia h3{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 41px;
+    color: #232851;
+    margin-bottom: 36px;
+    margin-top: 23px;
+}
+.cuerpo .information .diferencia p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #000000;
+    max-width: 360px;
+}
+.redondo{
+    background: #F3603B;
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+.cuerpo .information .diferencias{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.cuerpo .information .diferencias .puntos{
+    display: flex;
+    flex-direction: row;
+
+}
+.cuerpo .information .diferencias .puntos p{
+    align-self: flex-start;
+    margin: 23px 18px;
+}
+.cuerpo .information .diferencias .subtitulo{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 23px;
+    color: #323851;
+    
+}
+p{
+    font-weight: 500;
+    font-size: 16.2984px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #B3B2B7;
+}
+ .cuerpo .opciones h3{
+    text-align: center;
+    flex-direction: column;
+    font-size: 39px;
+    font-weight: 700;
+    line-height: 61px;
+    color: #242E53;
+    margin: 70px 0px;
+}
+.cuerpo .opciones{
+    display: flex;
+    flex-direction: column;
+    
+}
+.cuerpo .opciones .cards{
+    display: flex; 
+    justify-content: space-around;
+    margin: 10px 70px;
+   
+    
+}
+.cuerpo .opciones .cards .card{
+    max-width: 455px;
+    overflow: visible;
+    margin: 10px;
+    background-color: #fafafa;
+    padding-bottom: 40px;
+}
+.cuerpo .opciones .cards .card img{
+    display: flex;
+    margin: auto;
+    margin-top: -35px;
+    width: 70px;
+    height: 70px;
+
+}
+.cuerpo .opciones .cards p{
+    display: flex;
+    font-weight: 600;
+    font-size: 16px;
+    align-items: center;
+    text-align: center;
+    color: #B9B9C1;
+    padding-right: 14px; 
+    padding-left: 14px;   
+}
+.cuerpo .opciones .cards .subs{
+    display: flex;
+    justify-content: center;
+    padding: 21px;
+
+}
+.cuerpo .opciones .cards .subs .name{
+    color: #001357;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25px;   
+}
+.cuerpo .opciones .boton-centro{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 45px;
+    padding-bottom: 180px;
+}
+/* Barra naranja antes del footer */
+
+.cuerpo .barra-naranja{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #f3613c;
+    background-image: url(/img/bg-simplify-section-desktop.svg);
+}
+.cuerpo .barra-naranja h4{
+    font-size: 40px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    max-width:  445px;
+    padding: 64px 165px;
+}
+.cuerpo .barra-naranja div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 165px;
+}
+/* Footer de la paginas */
+#brand-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cuerpo .pie-de-pagina{
+    display: flex;
+    background-color: #1E1E26;
+    justify-content: space-evenly;
+}
+#logo-blanco {
+    padding: 67px;
+}
+.cuerpo .pie-de-pagina .redes{
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 75px;
+}
+.cuerpo .pie-de-pagina .redes a{
+    padding-left: 7px;
+    padding-right: 7px;
+}
+.cuerpo .pie-de-pagina .ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: auto;
+    width: 30%;
+} 
+.cuerpo .pie-de-pagina .ul li{
+    list-style-type: none;
+    margin: 12px;
+}
+.cuerpo .pie-de-pagina .ul a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    color: #FFFFFF;
+    max-width: 135px;
+}
