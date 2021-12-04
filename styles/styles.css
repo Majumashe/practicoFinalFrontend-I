@@ -2,24 +2,32 @@
     font-family: "Be_Vietnam";
     src: url(/assets/be-vietnam/BeVietnam-Regular.ttf);
     font-weight: 400;
-  }
+}
+
 @font-face {
     font-family: "Be_Vietnam";
     src: url(/assets/be-vietnam/BeVietnam-Medium.ttf);
     font-weight: 500;
-  }
+}
+
 @font-face {
     font-family: "Be_Vietnam";
     src: url(/assets/be-vietnam/BeVietnam-Bold.ttf);
     font-weight: 700;
-  }
-*{
+}
+/* A partir de la linea 448 estan los @media, vistas desktop y mobile y algunos estilos adaptados a tablet*/
+* {
     margin: 0;
-    padding:0;
+    padding: 0;
     font-family: "Be_Vietnam";
 }
+
+html {
+    overflow-x: hidden;
+}
+
 /* boton hamburguesa version mobile */
-#hamburguesa{
+#hamburguesa {
     display: none;
     background-image: url(/img/icon-hamburger.svg);
     width: 10px;
@@ -30,11 +38,12 @@
     background-repeat: no-repeat;
     background-position-y: center;
     background-position-x: center;
-    background-color: #FFFFFF;
+    background-color: transparent;
 }
+
 /* boton get started */
-.button-nav-bar{ 
-    background-color:#F3603B;
+.button-nav-bar {
+    background-color: #F3603B;
     padding: 12.5px 30px;
     font-size: 13px;
     font-weight: 500;
@@ -44,14 +53,16 @@
     color: #FFFFFF;
     text-decoration: none;
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+
 }
-.button-nav-bar:hover{
-    background-color:#f37758;
+
+.button-nav-bar:hover {
+    background-color: #f37758;
     box-shadow: 0px 4px 7px #f37758;
 }
-.button-nav-bar.last{ 
-    background-color:#FFFFFF;
-    padding: 12.5px 30px;
+
+.button-nav-bar.last {
+    background-color: #FFFFFF;
     font-size: 13px;
     font-weight: 500;
     line-height: 19px;
@@ -60,12 +71,16 @@
     color: #F3603B;
     text-decoration: none;
     box-shadow: none;
+    min-width: 72px;
+
 }
-.button-nav-bar.last:hover{
-    background-color:#fce3dd;
+
+.button-nav-bar.last:hover {
+    background-color: #fce3dd;
     box-shadow: 0px 4px 7px #f37758;
 }
-.cuerpo{
+
+.cuerpo {
     background: #FFFFFF;
     font-size: 16px;
     display: flex;
@@ -74,57 +89,75 @@
     background-repeat: no-repeat;
     background-position-x: 720px;
     background-position-y: -141px;
+    overflow-x: hidden;
 }
-.cuerpo .encabezado{
+
+.cuerpo .encabezado {
     display: flex;
     padding: 65px 100px;
     flex-direction: row;
-    justify-content:space-between; 
+    justify-content: space-between;
     align-items: center;
     background-color: transparent;
 }
+
 /* Logotipo manage */
-.cuerpo .encabezado .logotipo a{
+.cuerpo .encabezado .logotipo a {
     display: flex;
     align-items: center;
 }
-.cuerpo .encabezado .menu .lista{
+
+.cuerpo .encabezado .menu .lista {
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content: space-around;
 }
-.cuerpo .encabezado .menu .lista .nav-bar-opciones{
+
+.cuerpo .encabezado .menu .lista .nav-bar-opciones {
     padding: 0px 25px;
     list-style-type: none;
 }
+
 /* Texto dentro de las anclas  */
-.cuerpo .encabezado .menu .lista .nav-bar-opciones a{
+.cuerpo .encabezado .menu .lista .nav-bar-opciones a {
     text-decoration: none;
     font-size: 13px;
     font-weight: 500;
     line-height: 23px;
-    color:#242E52;
-    
+    color: #242E52;
+
 }
-.cuerpo .information{
+
+.cuerpo .information {
     display: flex;
     padding: 65px 100px;
     justify-content: space-around;
 }
-.cuerpo .information .brand{
+
+.cuerpo .information .diferencia {
+    width: 40%;
+}
+
+.cuerpo .information .diferencias {
+    width: 60%;
+    ;
+}
+
+.cuerpo .information .brand {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-h1{
+h1 {
     font-size: 58px;
     font-weight: 700;
     line-height: 66px;
     color: #232C50;
     margin-bottom: 28px;
 }
-.cuerpo .information .brand p{
+
+.cuerpo .information .brand p {
     font-size: 17px;
     font-weight: 500;
     line-height: 26px;
@@ -132,11 +165,13 @@ h1{
     max-width: 360px;
     margin-bottom: 28px;
 }
-.cuerpo .information .graficos-inicio{
+
+.cuerpo .information .graficos-inicio {
     background: transparent;
 }
+
 /* seccion informativa diferencia */
-.cuerpo .information .diferencia h3{
+.cuerpo .information .diferencia h3 {
     font-size: 36px;
     font-weight: 700;
     line-height: 41px;
@@ -144,14 +179,15 @@ h1{
     margin-bottom: 36px;
     margin-top: 23px;
 }
-.cuerpo .information .diferencia p{
+
+.cuerpo .information .diferencia p {
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
     color: #000000;
-    max-width: 360px;
 }
-.redondo{
+
+.redondo {
     background: #F3603B;
     border-radius: 30px;
     padding: 10px 25px;
@@ -159,30 +195,36 @@ h1{
     font-weight: 700;
     line-height: 23px;
     color: #FFFFFF;
+    border: none;
 }
-.cuerpo .information .diferencias{
+
+.cuerpo .information .diferencias {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 }
-.cuerpo .information .diferencias .puntos{
+
+.cuerpo .information .diferencias .puntos {
     display: flex;
     flex-direction: row;
 
 }
-.cuerpo .information .diferencias .puntos p{
+
+.cuerpo .information .diferencias .puntos p {
     align-self: flex-start;
     margin: 23px 18px;
 }
-.cuerpo .information .diferencias .subtitulo{
+
+.cuerpo .information .diferencias .subtitulo {
     font-size: 16px;
     font-weight: 700;
     line-height: 23px;
     color: #323851;
-    
+
 }
-p{
+
+p {
     font-weight: 500;
     font-size: 16.2984px;
     line-height: 26px;
@@ -190,7 +232,8 @@ p{
     align-items: center;
     color: #B3B2B7;
 }
- .cuerpo .opciones h3{
+
+.cuerpo .opciones h3 {
     text-align: center;
     flex-direction: column;
     font-size: 39px;
@@ -199,26 +242,30 @@ p{
     color: #242E53;
     margin: 70px 0px;
 }
-.cuerpo .opciones{
+
+.cuerpo .opciones {
     display: flex;
     flex-direction: column;
-    
+
 }
-.cuerpo .opciones .cards{
-    display: flex; 
+
+.cuerpo .opciones .cards {
+    display: flex;
     justify-content: space-around;
     margin: 10px 70px;
-   
-    
+
+
 }
-.cuerpo .opciones .cards .card{
+
+.cuerpo .opciones .cards .card {
     max-width: 455px;
     overflow: visible;
     margin: 10px;
     background-color: #fafafa;
     padding-bottom: 40px;
 }
-.cuerpo .opciones .cards .card img{
+
+.cuerpo .opciones .cards .card img {
     display: flex;
     margin: auto;
     margin-top: -35px;
@@ -226,29 +273,33 @@ p{
     height: 70px;
 
 }
-.cuerpo .opciones .cards p{
+
+.cuerpo .opciones .cards p {
     display: flex;
     font-weight: 600;
     font-size: 16px;
     align-items: center;
     text-align: center;
     color: #B9B9C1;
-    padding-right: 14px; 
-    padding-left: 14px;   
+    padding-right: 14px;
+    padding-left: 14px;
 }
-.cuerpo .opciones .cards .subs{
+
+.cuerpo .opciones .cards .subs {
     display: flex;
     justify-content: center;
     padding: 21px;
 
 }
-.cuerpo .opciones .cards .subs .name{
+
+.cuerpo .opciones .cards .subs .name {
     color: #001357;
     font-size: 16px;
     font-weight: 700;
-    line-height: 25px;   
+    line-height: 25px;
 }
-.cuerpo .opciones .boton-centro{
+
+.cuerpo .opciones .boton-centro {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -256,71 +307,359 @@ p{
     padding-top: 45px;
     padding-bottom: 180px;
 }
+
 /* Barra naranja antes del footer */
 
-.cuerpo .barra-naranja{
+.cuerpo .barra-naranja {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: #f3613c;
-    background-image: url(/img/bg-simplify-section-desktop.svg);
-}
-.cuerpo .barra-naranja h4{
+     }
+
+.cuerpo .barra-naranja h4 {
     font-size: 40px;
     line-height: 48px;
     display: flex;
     align-items: center;
     color: #FFFFFF;
-    max-width:  445px;
+    max-width: 445px;
     padding: 64px 165px;
 }
-.cuerpo .barra-naranja div{
+
+.cuerpo .barra-naranja div {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-right: 165px;
 }
+
 /* Footer de la paginas */
-#brand-footer{
+#brand-footer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
 }
-.cuerpo .pie-de-pagina{
+
+.cuerpo .pie-de-pagina {
     display: flex;
     background-color: #1E1E26;
     justify-content: space-evenly;
+    padding: 60px 100px;
+
 }
-#logo-blanco {
-    padding: 67px;
-}
-.cuerpo .pie-de-pagina .redes{
+
+.cuerpo .pie-de-pagina .redes {
+    width: 100%;
+    display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding-bottom: 75px;
+    justify-content: space-between;
+    align-items: center;
 }
-.cuerpo .pie-de-pagina .redes a{
-    padding-left: 7px;
-    padding-right: 7px;
+
+.cuerpo .pie-de-pagina .redes a svg path:hover {
+    fill: #F3603B;
 }
-.cuerpo .pie-de-pagina .ul{
+
+.cuerpo .pie-de-pagina .ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     margin: auto;
     width: 30%;
-} 
-.cuerpo .pie-de-pagina .ul li{
+}
+
+.cuerpo .pie-de-pagina .ul li {
     list-style-type: none;
     margin: 12px;
 }
-.cuerpo .pie-de-pagina .ul a{
+
+.cuerpo .pie-de-pagina .ul a {
     text-decoration: none;
     font-size: 16px;
     font-weight: 400;
     line-height: 23px;
     color: #FFFFFF;
     max-width: 135px;
+}
+
+.cuerpo .pie-de-pagina .ul a:hover {
+    color: #F3603b;
+}
+
+.cuerpo .pie-de-pagina .form-copy p {
+    font-size: 12.5px;
+    margin-left: auto;
+}
+
+#contacto {
+    display: flex;
+    flex-direction: row;
+}
+
+#contacto label{
+    display: none;
+    color: red;
+}
+
+.form-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto;
+
+}
+
+.cuerpo .email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    background: #FFFFFF;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 13.1806px;
+    line-height: 19px;
+    border: none;
+    margin-right: 10px;
+    width: 191px;
+
+}
+
+.div-boton {
+    min-width: 134px;
+}
+
+.copyright-mobile {
+    display: none;
+}
+
+.puntos-mobile {
+    display: none;
+}
+
+.puntos-carrusel{
+    display: none;
+}
+
+/* responsive pantalla de menos de 1000px */
+@media (max-width:1000px) {
+    .cuerpo .encabezado .menu .lista {
+        display: none;
+    }
+
+    .information {
+        flex-direction: column;
+    }
+
+    .graficos-inicio {
+        margin: auto;
+        padding-top: 30px;
+    }
+
+    
+.cuerpo .information .diferencia{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+}
+
+/* responsive movil 768px */
+@media (max-width:880px) {
+    .cuerpo .encabezado .div-boton {
+        display: none;
+    }
+
+    .cuerpo .information .brand p {
+        color: #979797;
+        text-align: center;
+    }
+
+    #hamburguesa {
+        display: flex;
+        margin: 30px 25px;
+        width: 25px;
+    }
+
+    .cuerpo .information {
+        flex-direction: column-reverse;
+        padding: 0 8%;
+    }
+
+    .cuerpo .information:nth-last-of-type(2) {
+        flex-direction: column;
+    }
+
+    .cuerpo .information .graficos-inicio {
+        width: 290px;
+    }
+
+    .cuerpo .information .graficos-inicio img {
+        width: 300px;
+    }
+
+    .cuerpo {
+        background-size: contain;
+        background-position-x: 55px;
+        background-position-y: -75px;
+
+    }
+
+    .div-boton {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cuerpo .encabezado {
+        padding: 0;
+    }
+
+    .cuerpo .encabezado img {
+        padding: 30px 25px;
+    }
+
+    .cuerpo .brand {
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+
+    .cuerpo .brand h1 {
+        font-size: 36px;
+        font-weight: 700;
+        text-align: center;
+        line-height: 1.2;
+        color: #232C50;
+
+    }
+
+    .puntos {
+        display: none !important;
+    }
+
+    .puntos-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .puntos-mobile div {
+        display: flex;
+    }
+
+    .puntos-mobile div:first-of-type {
+        background: rgba(243, 96, 59, 0.1);
+        border-radius: 20px;
+        margin-bottom: 10px;
+        margin-top: 30px;
+    }
+
+    .puntos-mobile div p:first-of-type {
+        margin-right: 2%;
+    }
+
+    .cuerpo .information .diferencia {
+        margin-bottom: 20px;
+    }
+
+    .cuerpo .information .diferencia h3 {
+        text-align: center;
+    }
+
+    .cuerpo .information .diferencia p {
+        text-align: center;
+        margin: 0 auto;
+        color: #979797;
+    }
+
+    .cuerpo .barra-naranja {
+        flex-direction: column;
+        align-items: center;
+        padding: 100px 0px;
+    }
+
+    .cuerpo .barra-naranja h4 {
+        padding: 0;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .cuerpo .barra-naranja div {
+        padding: 0;
+    }
+
+    .cuerpo .pie-de-pagina {
+        flex-direction: column-reverse;
+        padding: 60px 50px;
+    }
+
+    .cuerpo .pie-de-pagina .ul {
+        margin: 0 10px;
+        width: auto;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    #brand-footer {
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+
+    #logo-blanco {
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .cuerpo .pie-de-pagina .form-copy .copyright {
+        display: none;
+    }
+
+    .copyright-mobile {
+        display: flex;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+
+    .cuerpo .information .diferencia {
+        width: auto;
+    }
+
+    .cuerpo .information .diferencias {
+        width: auto;
+    }
+
+    .primer-card{
+        display: none;
+    }
+
+    .tercer-card{
+        display: none;
+    }
+
+    .puntos-carrusel{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .puntos-carrusel div{
+        border-radius: 50%;
+        border: 1px solid #F3603b;
+        width: 5px;
+        height: 5px;
+        margin: 0 5px;
+    }
+
+    .puntos-carrusel div:hover{
+        background: #F3603b;
+    }
+
+    .cuerpo .opciones .boton-centro{
+        padding-bottom: 45px;
+    }
 }
